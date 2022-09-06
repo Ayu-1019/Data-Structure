@@ -1,4 +1,4 @@
-function Stack() {
+export function Stack() {
   this.items = []
 
   // 1.将元素压入栈
@@ -32,16 +32,3 @@ function Stack() {
     return this.items.join('');
   }
 }
-
-const s = new Stack()
-
-s.push(1)
-s.push(2)
-s.push(3)
-s.push(4)
-console.log(s);
-console.log(s.pop());
-console.log(s.peek());
-console.log(s.isEmpty());
-console.log(s.size());
-console.log(s.toString());
