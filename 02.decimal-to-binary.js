@@ -13,3 +13,6 @@ export function decToBin(decNumber) {
   
   return binaryString
 }
+
+const result = decToBin(100)
+console.log(result)

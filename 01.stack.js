@@ -28,7 +28,18 @@ export function Stack() {
 
   // 6.toString方法
   Stack.prototype.toString = () => {
-    // let resultString = '';
-    return this.items.join('');
+    return this.items.join('')
   }
 }
+
+const s = new Stack()
+s.push(1)
+s.push(2)
+s.push(3)
+s.push(4)
+console.log(s);
+console.log(s.pop());
+console.log(s.peek());
+console.log(s.isEmpty());
+console.log(s.size());
+console.log(s.toString());
